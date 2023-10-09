@@ -1,0 +1,14 @@
+.todoC {
+    font-size: 24px;
+    text-align: 'center';
+    margin: 0;
+    padding: 40px;
+    color: #F4F4F4;
+    text-align: center;
+}
+
+
+.todoC span {
+    font-weight: bold;
+    color: #F0A500;
+}
