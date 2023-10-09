@@ -1,14 +1,22 @@
-
+import './TodoItem.css'
 
 
 function TodoItem(props) {
     return (
-        <li style={{ position: "relative", display: "flex", alignItems: "center", justifyContent: "space-around" }}>
-            <span style={{}}>x</span>
-            <p >{props.text} </p>
-            <span>y</span>
+        <li className="todoI">
+            <div style={{
+                display: "flex",
+                alignItems: "center",
+                width: "100%",
+                justifyContent: "space-between" /* Alinea elementos dentro del div */
+            }}>
+                <span className={`Icon Icon-Check ${props.completed && "Icon-check--active"}`}>V</span>
+                <p className={`TodoItem-p ${props.completed && "TodoItem-p--complete"}`}>{props.text}</p>
 
-        </li >
+                <span className={`Icon Icon-delete`}>x</span>
+            </div>
+        </li>
     )
 }
+
 export { TodoItem }

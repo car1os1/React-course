@@ -1,0 +1,76 @@
+.todoI {
+    position: relative;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    justify-content: space-between;
+    margin-top: 24px;
+    border: 2px solid #6A9C89;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.todoI-inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.todoI span {
+    flex: 0;
+}
+
+.todoI p {
+    flex: 1;
+    margin: 0;
+    text-align: center;
+}
+
+TodoItem-p {
+    width: calc(100% - 120px);
+    line-height: 24px;
+    font-weight: 400;
+}
+
+
+TodoItem-p--complete {
+    text-decoration: line-through;
+
+}
+
+
+.Icon {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.Icon-Check {
+    position: absolute;
+    left: 12px;
+}
+
+.Icon-check--active {
+    color: #F0A500;
+}
+
+
+.Icon-delete {
+    position: absolute;
+    top: -24px;
+    right: 0;
+}
+
+
+.Icon-delete:hover {
+    color: red;
+}
