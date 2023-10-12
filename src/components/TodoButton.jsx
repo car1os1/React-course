@@ -1,8 +1,9 @@
+import './TodoButton.css';
+
 
 const TodoButton = () => {
     return (
-
-        <button> + </button>
+        <button className="CreateTodoButton" onClick={() => console.log('le diste click')}> + </button>
     )
 }
 

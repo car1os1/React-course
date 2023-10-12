@@ -10,12 +10,13 @@ function TodoItem(props) {
                 width: "100%",
                 justifyContent: "space-between" /* Alinea elementos dentro del div */
             }}>
-                <span className={`Icon Icon-Check ${props.completed && "Icon-check--active"}`}>V</span>
-                <p className={`TodoItem-p ${props.completed && "TodoItem-p--complete"}`}>{props.text}</p>
+                <span className={`Icon Icon-Check ${props.completed && "Icon-check--active"}`} onClick={props.onCompleted} >V</span>
 
-                <span className={`Icon Icon-delete`}>x</span>
+                <p className={`TodoItem-p ${props.completed && "TodoItem-p--complete "}`}>{props.text}</p>
+
+                <span className={`Icon Icon-delete`} onClick={props.onDelete}>x</span>
             </div>
-        </li>
+        </li >
     )
 }
 

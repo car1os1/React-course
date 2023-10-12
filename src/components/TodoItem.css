@@ -29,14 +29,14 @@
     text-align: center;
 }
 
-TodoItem-p {
+.TodoItem-p {
     width: calc(100% - 120px);
     line-height: 24px;
     font-weight: 400;
 }
 
 
-TodoItem-p--complete {
+.TodoItem-p--complete {
     text-decoration: line-through;
 
 }
