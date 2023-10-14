@@ -5,7 +5,7 @@ import { TodoItem } from './components/TodoItem';
 import { TodoButton } from './components/TodoButton';
 import { useState } from 'react'
 
-
+/*
 const defaultTodos = [
   { text: 'limpiar ', completed: true },
   { text: 'cocinar ', completed: false },
@@ -14,11 +14,23 @@ const defaultTodos = [
 
 ]
 
-
+*/
 function App() {
 
+  const localStorageTodos = localStorage.getItem('TODOS_V1');
+  let parsedTodos;
+  if (!localStorageTodos) {
+    localStorage.setItem('TODOS_V1', JSON.stringify([]));
+    parsedTodos = [];
+  } else {
+    parsedTodos = JSON.parse(localStorageTodos);
+  }
+
+
+
+
   const [changes, setChanges] = useState('')
-  const [todos, setTodos] = useState(defaultTodos)
+  const [todos, setTodos] = useState(parsedTodos)
 
   const completedTodos = todos.filter(todo => !!todo.completed).length;
   const totalTodos = todos.length;
